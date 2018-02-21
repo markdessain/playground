@@ -24,6 +24,10 @@ RUN apt-get install -y graphviz
 
 RUN pip3 install gprof2dot==2017.9.19
 
+RUN pip3 install mypy==0.560
+
+RUN pip3 intall memory_profiler==0.52.0
+
 WORKDIR "/home/project"
 
 # docker run -p 8080:8080 -v $(pwd):/home/project -it playground
